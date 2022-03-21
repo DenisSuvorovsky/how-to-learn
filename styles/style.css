@@ -1,13 +1,27 @@
 .page {
-  min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
-  max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
-  margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+min-width: 1100px;
+/* мы ещё не умеем делать мобильную версию сайта, */
+/* поэтому выше установлена минимальная ширина страницы */
+max-width: 1600px;
+/* выше установили ограничение по максимальной ширине */
+margin: 0 auto;
+/* выше для экранов больше 1600px отцентрировали весь контент */
+font-family: 'Helvetica Neue', Arial, sans-serif;
 }
+.logo {
+  width: 183px;
+  height: 32px;
+  z-index: 1;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.logo_place_header {
+  position: absolute;
+  top: 30px;
+  left: 64px;
+}
+
 
 .header {
   display: flex;
@@ -16,7 +30,9 @@
   max-height: 756px;
   margin: 0;
   padding: 0;
-  /* выше установили ограничения для секции */
+  background-color: #f2f2f2;
+  position: relative;
+  overflow: hidden;
 }
 
 .header__title {
@@ -38,6 +54,7 @@
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
+  z-index: 1;
 }
 
 .header__link {
@@ -52,6 +69,7 @@
   position: absolute;
   bottom: 0;
   right: 0;
+  z-index: 2;
 }
 
 
@@ -62,21 +80,13 @@
   right: 0;
   top: 64px;
   background-color: #2f80ed;
-  z-index: -1;
-}
-
-.logo {
-  width: 183px;
-  height: 32px;
   z-index: 1;
 }
 
-.logo_place_header {
-  position: absolute;
-  top: 30px;
-  left: 64px;
+.two-columns {
+  display: flex;
+  margin: 0 auto;
 }
-
 
 .table__cell_theme_dark {
   width: 200px;
