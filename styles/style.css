@@ -80,6 +80,97 @@
   background-color: #2f80ed;
 }
 
+.rotation {
+  animation: rotation 20s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.techniques {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+.cards {
+  display: flex;
+  width: 920px;
+  flex-wrap: wrap;
+}
+
+.cards__item {
+  width: 240px;
+  margin-right: 100px;
+  text-align: center;
+}
+
+.cards__item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.cards__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 16px;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.cards__image {
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  margin: 60px 40px 43px 40px;
+}
+
+.cards__description {
+  margin: 0;
+  padding: 0;
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.video__iframes {
+  position: relative;
+  top: 50px;
+  display: flex;
+}
+
+.video__iframe {
+  width: 515px;
+  height: 316px;
+  margin-right: 20px;
+}
+
+.video__iframe:last-child {
+  margin-right: 0px;
+}
+
+.oakley {
+  display: flex;
+  justify-content: center;
+  padding-top: 160px;
+  background-color: #f2f2f2;
+}
 .two-columns {
   display: flex;
   justify-content: space-between;
@@ -145,15 +236,14 @@
 }
 
 .section-subtitle {
-  margin: 0;
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  padding: 0;
   margin-top: 20px;
+  width: 60%;
+  text-align: center;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-  text-align: center;
 }
 
 .section-subtitle_theme_dark {
@@ -215,14 +305,13 @@
   align-items: center;
   justify-content: flex-start;
   position: relative;
-  margin-top: 100px;
+  padding-top: 100px;
   min-height: 890px;
   background-color: #f2f2f2;
 }
 
 .feynman__title {
   width: 648px;
-  padding-top: 100px;
   margin: 0 auto;
   padding-bottom: 70px;
   line-height: 1.15;
